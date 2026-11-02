@@ -12,6 +12,7 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}
 *{box-sizing:border-box}
 body{margin:0;font:400 16px/1.6 Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 a{color:inherit}
+b{font-weight:800;color:#0a1929}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);color:var(--ink);border-bottom:1px solid var(--line)}
@@ -39,7 +40,7 @@ button{font:inherit;cursor:pointer}
 .btn.p{background:var(--ac);color:#fff}
 .btn.s{color:var(--ink);background:var(--card)}
 .btn:hover{filter:brightness(1.1)}
-.avatar{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;background:linear-gradient(145deg,#fff,#d3e5f4);border:2px dashed var(--ac);display:grid;place-items:center;overflow:hidden;position:relative;font:700 80px Fraunces,serif;color:var(--ac)}
+.avatar{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;background:linear-gradient(145deg,#fff,#d3e5f4);border:3px solid #4f81a7;box-shadow:0 0 15px rgba(126,200,255,.9),0 0 30px rgba(126,200,255,.7);display:grid;place-items:center;overflow:hidden;position:relative;font:700 80px Fraunces,serif;color:var(--ac)}
 .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 /* Domaines */
 .domains{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0 14px}
@@ -509,13 +510,13 @@ const TR={
     "nav.home":"Accueil","nav.about":"À propos","nav.projects":"Projets","nav.skills":"Comp\u00e9tences","nav.contact":"Contact",
     "hero.hi":"Bonjour, je suis","hero.role":"\u00c9l\u00e8ve ing\u00e9nieure en G\u00e9nie Logiciel &amp; Informatique d\u00e9cisionnelle",
     "hero.badge":"\u00c0 la recherche d\u2019un stage PFE de 5 \u00e0 6 mois \u00b7 d\u00e8s f\u00e9vrier 2027",
-    "hero.lead":"Du d\u00e9veloppement Full Stack \u00e0 l\u2019intelligence artificielle, je con\u00e7ois des applications web et mobiles qui s\u2019appuient sur la donn\u00e9e pour r\u00e9pondre \u00e0 de vrais besoins m\u00e9tier.",
+    "hero.lead":"Passionn\u00e9e par l\u2019innovation technologique, je transforme des id\u00e9es en solutions concr\u00e8tes et performantes, du code \u00e0 l\u2019intelligence des donn\u00e9es.",
     "hero.btn1":"Voir mes projets","hero.btn2":"T\u00e9l\u00e9charger mon CV","hero.btn3":"LinkedIn",
     "domains.label":"Ouverte \u00e0 tous les domaines de l\u2019IT",
     "domain.data":"Data &amp; BI","domain.ai":"Intelligence artificielle","domain.cloud":"Cloud &amp; DevOps","domain.web":"D\u00e9veloppement web","domain.mobile":"Applications mobiles",
     "about.title":"\u00c0 propos",
     "about.quote":"De la conception d\u2019applications \u00e0 l\u2019exploitation intelligente des donn\u00e9es, je transforme les d\u00e9fis technologiques en solutions innovantes.",
-    "about.intro":"Future ing\u00e9nieure en G\u00e9nie Logiciel et Informatique D\u00e9cisionnelle \u00e0 l\u2019IIT de Sfax, je suis passionn\u00e9e par l\u2019intelligence artificielle, la data et le d\u00e9veloppement Full Stack. Mes projets m\u2019ont appris \u00e0 allier rigueur technique, esprit d\u2019analyse et compr\u00e9hension des enjeux m\u00e9tier pour concevoir des solutions innovantes et performantes. Je recherche aujourd\u2019hui un stage de fin d\u2019\u00e9tudes (PFE) pour contribuer \u00e0 des projets \u00e0 fort impact, dans un environnement stimulant et tourn\u00e9 vers l\u2019innovation.",
+    "about.intro":"Future ing\u00e9nieure en G\u00e9nie Logiciel et Informatique D\u00e9cisionnelle \u00e0 l\u2019IIT de Sfax, je suis passionn\u00e9e par <b>l\u2019intelligence artificielle</b>, <b>la data</b> et le <b>d\u00e9veloppement Full Stack</b>. Mes projets m\u2019ont appris \u00e0 allier rigueur technique, esprit d\u2019analyse et compr\u00e9hension des enjeux m\u00e9tier pour concevoir des solutions innovantes et performantes. Je recherche aujourd\u2019hui un stage de fin d\u2019\u00e9tudes (PFE) pour contribuer \u00e0 des projets \u00e0 fort impact, dans un environnement stimulant et tourn\u00e9 vers l\u2019innovation.",
     "about.who":"Qui suis-je","about.qualities":"Mes qualit\u00e9s","about.motivation":"Ce qui me motive","about.looking":"Ce que je cherche",
     "about.lang1":"Arabe","about.lang2":"Fran\u00e7ais (DELF B2)","about.lang3":"Anglais",
     "about.academic":"Parcours acad\u00e9mique",
@@ -536,13 +537,13 @@ const TR={
     "nav.home":"Home","nav.about":"About","nav.projects":"Projects","nav.skills":"Skills","nav.contact":"Contact",
     "hero.hi":"Hi, I am","hero.role":"Software Engineering &amp; Business Intelligence student",
     "hero.badge":"Looking for a 5-6 month final-year internship \u00b7 from February 2027",
-    "hero.lead":"From Full Stack development to artificial intelligence, I build web and mobile applications powered by data to solve real business problems.",
+    "hero.lead":"Passionate about technological innovation, I transform ideas into concrete and high-performing solutions, from code to data intelligence.",
     "hero.btn1":"View my projects","hero.btn2":"Download my CV","hero.btn3":"LinkedIn",
     "domains.label":"Open to all IT domains",
     "domain.data":"Data &amp; BI","domain.ai":"Artificial intelligence","domain.cloud":"Cloud &amp; DevOps","domain.web":"Web development","domain.mobile":"Mobile applications",
     "about.title":"About",
     "about.quote":"From application design to intelligent data exploitation, I transform technological challenges into innovative solutions.",
-    "about.intro":"Future Software Engineering and Business Intelligence graduate from IIT Sfax, I am passionate about artificial intelligence, data and Full Stack development. My projects have taught me to combine technical rigor, analytical thinking and understanding of business challenges to design innovative and high-performing solutions. I am currently looking for a final-year internship (PFE) to contribute to high-impact projects in a stimulating and innovation-driven environment.",
+    "about.intro":"Future Software Engineering and Business Intelligence graduate from IIT Sfax, I am passionate about <b>artificial intelligence</b>, <b>data</b> and <b>Full Stack development</b>. My projects have taught me to combine technical rigor, analytical thinking and understanding of business challenges to design innovative and high-performing solutions. I am currently looking for a final-year internship (PFE) to contribute to high-impact projects in a stimulating and innovation-driven environment.",
     "about.who":"Who I am","about.qualities":"My qualities","about.motivation":"What motivates me","about.looking":"What I\u2019m looking for",
     "about.lang1":"Arabic","about.lang2":"French (DELF B2)","about.lang3":"English",
     "about.academic":"Academic background",
